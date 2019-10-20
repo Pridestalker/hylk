@@ -58,17 +58,17 @@
     },
     {
         "name": "aristath/kirki",
-        "version": "v3.0.44",
-        "version_normalized": "3.0.44.0",
+        "version": "v3.0.45",
+        "version_normalized": "3.0.45.0",
         "source": {
             "type": "git",
             "url": "https://github.com/aristath/kirki.git",
-            "reference": "0ad720aad498ab984acdd6ef29dde426bd00058c"
+            "reference": "5045850cfdfd319c9354fec46c333a140509b098"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/aristath/kirki/zipball/0ad720aad498ab984acdd6ef29dde426bd00058c",
-            "reference": "0ad720aad498ab984acdd6ef29dde426bd00058c",
+            "url": "https://api.github.com/repos/aristath/kirki/zipball/5045850cfdfd319c9354fec46c333a140509b098",
+            "reference": "5045850cfdfd319c9354fec46c333a140509b098",
             "shasum": ""
         },
         "require": {
@@ -83,7 +83,7 @@
             "phpunit/phpunit": "*",
             "wp-coding-standards/wpcs": "*"
         },
-        "time": "2019-06-24T21:32:08+00:00",
+        "time": "2019-09-01T06:56:49+00:00",
         "type": "library",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -97,9 +97,9 @@
         "authors": [
             {
                 "name": "aristath",
-                "role": "Developer",
                 "email": "aristath@gmail.com",
-                "homepage": "https://aristath.github.io"
+                "homepage": "https://aristath.github.io",
+                "role": "Developer"
             }
         ],
         "description": "Extending the WordPress customizer",
@@ -529,18 +529,219 @@
         "homepage": "https://github.com/jjgrainger/posttype"
     },
     {
+        "name": "monolog/monolog",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/monolog.git",
+            "reference": "68545165e19249013afd1d6f7485aecff07a2d22"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/68545165e19249013afd1d6f7485aecff07a2d22",
+            "reference": "68545165e19249013afd1d6f7485aecff07a2d22",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2",
+            "psr/log": "^1.0.1"
+        },
+        "provide": {
+            "psr/log-implementation": "1.0.0"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+            "doctrine/couchdb": "~1.0@dev",
+            "elasticsearch/elasticsearch": "^6.0",
+            "graylog2/gelf-php": "^1.4.2",
+            "jakub-onderka/php-parallel-lint": "^0.9",
+            "php-amqplib/php-amqplib": "~2.4",
+            "php-console/php-console": "^3.1.3",
+            "phpspec/prophecy": "^1.6.1",
+            "phpunit/phpunit": "^8.3",
+            "predis/predis": "^1.1",
+            "rollbar/rollbar": "^1.3",
+            "ruflin/elastica": ">=0.90 <3.0",
+            "swiftmailer/swiftmailer": "^5.3|^6.0"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+            "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+            "ext-mbstring": "Allow to work properly with unicode symbols",
+            "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+            "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+            "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+            "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+            "php-console/php-console": "Allow sending log messages to Google Chrome",
+            "rollbar/rollbar": "Allow sending log messages to Rollbar",
+            "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+        },
+        "time": "2019-08-30T09:56:44+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Monolog\\": "src/Monolog"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+        "homepage": "http://github.com/Seldaek/monolog",
+        "keywords": [
+            "log",
+            "logging",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "nesbot/carbon",
+        "version": "2.25.3",
+        "version_normalized": "2.25.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/briannesbitt/Carbon.git",
+            "reference": "d07636581795383e2fea2d711212d30f941f2039"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d07636581795383e2fea2d711212d30f941f2039",
+            "reference": "d07636581795383e2fea2d711212d30f941f2039",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "php": "^7.1.8 || ^8.0",
+            "symfony/translation": "^3.4 || ^4.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
+            "kylekatarnls/multi-tester": "^1.1",
+            "phpmd/phpmd": "dev-php-7.1-compatibility",
+            "phpstan/phpstan": "^0.11",
+            "phpunit/phpunit": "^7.5 || ^8.0",
+            "squizlabs/php_codesniffer": "^3.4"
+        },
+        "time": "2019-10-20T11:05:44+00:00",
+        "bin": [
+            "bin/carbon"
+        ],
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Carbon\\Laravel\\ServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Carbon\\": "src/Carbon/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Brian Nesbitt",
+                "email": "brian@nesbot.com",
+                "homepage": "http://nesbot.com"
+            },
+            {
+                "name": "kylekatarnls",
+                "homepage": "http://github.com/kylekatarnls"
+            }
+        ],
+        "description": "An API extension for DateTime that supports 281 different languages.",
+        "homepage": "http://carbon.nesbot.com",
+        "keywords": [
+            "date",
+            "datetime",
+            "time"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-11-20T15:27:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
         "name": "roave/security-advisories",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/Roave/SecurityAdvisories.git",
-            "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
+            "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
-            "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
+            "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/eb59d9f35a47f567ae15e7179d7c666489cd4b85",
+            "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85",
             "shasum": ""
         },
         "conflict": {
@@ -563,7 +764,7 @@
             "contao/core": ">=2,<3.5.39",
             "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
             "contao/listing-bundle": ">=4,<4.4.8",
-            "contao/newsletter-bundle": ">=4,<4.1",
+            "datadog/dd-trace": ">=0.30,<0.30.2",
             "david-garcia/phpwhois": "<=4.3.1",
             "doctrine/annotations": ">=1,<1.2.7",
             "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
@@ -606,9 +807,9 @@
             "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
             "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
             "league/commonmark": "<0.18.3",
-            "magento/magento1ce": "<1.9.4.1",
-            "magento/magento1ee": ">=1.9,<1.14.4.1",
-            "magento/product-community-edition": ">=2,<2.2.8|>=2.3,<2.3.1",
+            "magento/magento1ce": "<1.9.4.3",
+            "magento/magento1ee": ">=1,<1.14.4.3",
+            "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.3",
             "monolog/monolog": ">=1.8,<1.12",
             "namshi/jose": "<2.2",
             "onelogin/php-saml": "<2.10.4",
@@ -651,6 +852,7 @@
             "spoonity/tcpdf": "<6.2.22",
             "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
             "stormpath/sdk": ">=0,<9.9.99",
+            "studio-42/elfinder": "<2.1.48",
             "swiftmailer/swiftmailer": ">=4,<5.4.5",
             "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
             "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
@@ -729,7 +931,7 @@
             "zfcampus/zf-apigility-doctrine": ">=1,<1.0.3",
             "zfr/zfr-oauth2-server-module": "<0.1.2"
         },
-        "time": "2019-07-18T15:17:58+00:00",
+        "time": "2019-10-09T14:04:58+00:00",
         "type": "metapackage",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -866,18 +1068,155 @@
         ]
     },
     {
-        "name": "timber/timber",
-        "version": "1.10.1",
-        "version_normalized": "1.10.1.0",
+        "name": "symfony/translation",
+        "version": "v4.3.5",
+        "version_normalized": "4.3.5.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/timber/timber.git",
-            "reference": "0eea8b38ccfc4b80f0578959c809e924c998b22a"
+            "url": "https://github.com/symfony/translation.git",
+            "reference": "fe6193b066c457c144333c06aaa869a2d42a167f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/timber/timber/zipball/0eea8b38ccfc4b80f0578959c809e924c998b22a",
-            "reference": "0eea8b38ccfc4b80f0578959c809e924c998b22a",
+            "url": "https://api.github.com/repos/symfony/translation/zipball/fe6193b066c457c144333c06aaa869a2d42a167f",
+            "reference": "fe6193b066c457c144333c06aaa869a2d42a167f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/translation-contracts": "^1.1.6"
+        },
+        "conflict": {
+            "symfony/config": "<3.4",
+            "symfony/dependency-injection": "<3.4",
+            "symfony/yaml": "<3.4"
+        },
+        "provide": {
+            "symfony/translation-implementation": "1.0"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~3.4|~4.0",
+            "symfony/console": "~3.4|~4.0",
+            "symfony/dependency-injection": "~3.4|~4.0",
+            "symfony/finder": "~2.8|~3.0|~4.0",
+            "symfony/http-kernel": "~3.4|~4.0",
+            "symfony/intl": "~3.4|~4.0",
+            "symfony/service-contracts": "^1.1.2",
+            "symfony/var-dumper": "~3.4|~4.0",
+            "symfony/yaml": "~3.4|~4.0"
+        },
+        "suggest": {
+            "psr/log-implementation": "To use logging capability in translator",
+            "symfony/config": "",
+            "symfony/yaml": ""
+        },
+        "time": "2019-09-27T14:37:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Translation\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/translation-contracts",
+        "version": "v1.1.7",
+        "version_normalized": "1.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/translation-contracts.git",
+            "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/364518c132c95642e530d9b2d217acbc2ccac3e6",
+            "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "suggest": {
+            "symfony/translation-implementation": ""
+        },
+        "time": "2019-09-17T11:12:18+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Contracts\\Translation\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Generic abstractions related to translation",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "abstractions",
+            "contracts",
+            "decoupling",
+            "interfaces",
+            "interoperability",
+            "standards"
+        ]
+    },
+    {
+        "name": "timber/timber",
+        "version": "1.12.0",
+        "version_normalized": "1.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/timber/timber.git",
+            "reference": "25e91be73d9db6ef314398f04852127c915d7c9d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/timber/timber/zipball/25e91be73d9db6ef314398f04852127c915d7c9d",
+            "reference": "25e91be73d9db6ef314398f04852127c915d7c9d",
             "shasum": ""
         },
         "require": {
@@ -889,7 +1228,7 @@
         },
         "require-dev": {
             "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-            "johnpbloch/wordpress": "4.*",
+            "johnpbloch/wordpress": "*",
             "phpunit/phpunit": "5.7.16|6.*",
             "squizlabs/php_codesniffer": "3.*",
             "wp-coding-standards/wpcs": "^2.0",
@@ -899,7 +1238,7 @@
         "suggest": {
             "satooshi/php-coveralls": "1.0.* for code coverage"
         },
-        "time": "2019-06-17T00:51:37+00:00",
+        "time": "2019-10-18T01:05:19+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -934,17 +1273,17 @@
     },
     {
         "name": "twig/twig",
-        "version": "v2.11.3",
-        "version_normalized": "2.11.3.0",
+        "version": "v2.12.1",
+        "version_normalized": "2.12.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "699ed2342557c88789a15402de5eb834dedd6792"
+            "reference": "ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
-            "reference": "699ed2342557c88789a15402de5eb834dedd6792",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
+            "reference": "ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
             "shasum": ""
         },
         "require": {
@@ -954,14 +1293,14 @@
         },
         "require-dev": {
             "psr/container": "^1.0",
-            "symfony/debug": "^2.7",
-            "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
+            "symfony/debug": "^3.4|^4.2",
+            "symfony/phpunit-bridge": "^4.4@dev|^5.0"
         },
-        "time": "2019-06-18T15:37:11+00:00",
+        "time": "2019-10-17T07:34:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.11-dev"
+                "dev-master": "2.12-dev"
             }
         },
         "installation-source": "dist",
@@ -980,19 +1319,19 @@
         "authors": [
             {
                 "name": "Fabien Potencier",
-                "role": "Lead Developer",
                 "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org"
-            },
-            {
-                "name": "Armin Ronacher",
-                "role": "Project Founder",
-                "email": "armin.ronacher@active-4.com"
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
             },
             {
                 "name": "Twig Team",
-                "role": "Contributors",
-                "homepage": "https://twig.symfony.com/contributors"
+                "homepage": "https://twig.symfony.com/contributors",
+                "role": "Contributors"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
             }
         ],
         "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -1056,28 +1395,28 @@
     },
     {
         "name": "yahnis-elsts/plugin-update-checker",
-        "version": "v4.7",
-        "version_normalized": "4.7.0.0",
+        "version": "v4.8.1",
+        "version_normalized": "4.8.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
-            "reference": "6da68b119277a400fad0ca6ec54f223b10bd8230"
+            "reference": "908249c92e81c46cb66e4d81632c5e917dc879ae"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/6da68b119277a400fad0ca6ec54f223b10bd8230",
-            "reference": "6da68b119277a400fad0ca6ec54f223b10bd8230",
+            "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/908249c92e81c46cb66e4d81632c5e917dc879ae",
+            "reference": "908249c92e81c46cb66e4d81632c5e917dc879ae",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.0"
         },
-        "time": "2019-07-05T18:39:53+00:00",
+        "time": "2019-10-08T12:15:30+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "files": [
-                "plugin-update-checker.php"
+                "load-v4p8.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
