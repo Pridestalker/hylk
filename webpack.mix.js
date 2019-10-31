@@ -7,6 +7,7 @@ const purger = mix.inProduction()
                 './templates/**/*.html.twig',
                 './assets/scripts/**/*.vue',
                 './assets/scripts/**/*.jsx',
+                './assets/scripts/**/*.js',
                 './templates/**/*.html',
                 './templates/**/*.twig',
             ],

@@ -1,10 +1,16 @@
 <header class="header">
-    <div class="container mx-auto">
-        {% if theme.theme_mod('custom_logo') %}
-            {{ include('components/header/logo.html.twig') }}
-        {% else %}
-            <h2 class="site-title">{{ fn('get_bloginfo', 'name') }}</h2>
-            <h4 class="site-subtitle">{{ fn('get_bloginfo', 'description') }}</h4>
-        {% endif %}
+    <div class="container mx-auto lg:flex">
+        <section class="header-start">
+            {% if theme.theme_mod('custom_logo') %}
+                {{ include('components/header/logo.html.twig') }}
+            {% else %}
+                {{ include('components/header/logo-text.html.twig') }}
+            {% endif %}
+        </section>
+        <section class="header-end">
+            <nav class="main-menu">
+                {{ include('components/header/navbar.html.twig') }}
+            </nav>
+        </section>
     </div>
 </header>

@@ -1,0 +1,21 @@
+{% if primaryMenu.items %}
+    <div class="menu-wrapper">
+        {% for item in primaryMenu.items %}
+            <div class="menu-item-wrapper">
+                <a href="{{ item.link }}" title="{{ item.title }}" target="{{ item.target }}" class="menu-item navmenu-item {{ item.classes|join(' ') }}">
+                    {{ item.title }}
+                </a>
+
+                {% if item.children %}
+                    <div class="submenu-wrapper" id="submenu-{{ item.id }}">
+                        {% for child in item.children %}
+                            <a href="{{ child.link }}" title="{{ child.title }}" target="{{ child.target }}" class="submenu-item {{ child.classes|join(' ') }}">
+                                {{ child.title }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

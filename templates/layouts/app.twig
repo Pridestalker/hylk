@@ -2,7 +2,7 @@
 <html lang="{{ site.language }}">
 <head>
     {% block head %}{% include 'layouts/helpers/head.twig' %}{% endblock %}
-    {{ fn('wp_head') }}
+    {{ wp_head }}
 </head>
 <body {{ fn('body_class') }}>
 {% block header %}{% include 'layouts/helpers/header.twig' %}{% endblock %}
@@ -11,6 +11,6 @@
 
 {% block footer %}{% include 'layouts/helpers/footer.twig' %}{% endblock footer %}
 
-{{ fn('wp_footer') }}
+{{ wp_footer }}
 </body>
 </html>

@@ -1,0 +1,6 @@
+{% set _logo = Image(theme.theme_mod('custom_logo')) %}
+<figure class="custom-logo-wrapper">
+    <a href="{{ site.link }}">
+        <img src="{{ _logo.src('large') }}" alt="{{ _logo.alt?? site.title }}" class="custom-logo" />
+    </a>
+</figure>
