@@ -35,7 +35,9 @@ class MenuServiceProvider
      */
     public function boot(): void
     {
-        register_nav_menus($this->menus);
+        register_nav_menus(
+        	apply_filters('hylk/register/menus', $this->menus)
+        );
         
         add_filter('timber/context', [ $this, 'registerContent' ]);
     }

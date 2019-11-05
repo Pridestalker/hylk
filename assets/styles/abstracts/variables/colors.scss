@@ -1,0 +1,26 @@
+@use "abstracts/functions/colors" as *;
+
+$primary: #ed254e !default;
+$primary-invert: find-color-invert($primary) !default;
+$primary-complement: find-color-complement($primary) !default;
+
+$secondary: #f9dc5c !default;
+$secondary-invert: find-color-invert($secondary) !default;
+$secondary-complement: find-color-complement($secondary) !default;
+
+$white: #f4fffd !default;
+$white-invert: find-color-invert($white) !default;
+$white-complement: find-color-complement($white) !default;
+
+$black: #011936 !default;
+$black-invert: find-color-invert($black) !default;
+$black-complement: find-color-complement($black) !default;
+
+$colors: (
+  'primary': make-color-map($primary, $primary-invert, $primary-complement),
+  'secondary': make-color-map($secondary, $secondary-invert, $secondary-complement),
+  'white': make-color-map($white, $white-invert, $white-complement),
+  'black': make-color-map($black, $black-invert, $black-complement)
+) !default;
+
+$theme-colors: () !default;

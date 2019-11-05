@@ -1,0 +1,26 @@
+@function find-color-invert($color) {
+  @if lightness($color) > 35% {
+    @return hsla(0, 0%, 0%, 0.7);
+  }
+
+  @return hsl(0, 100%, 100%);
+}
+
+@function find-color-complement($color) {
+  @return color-complement($color);
+}
+
+@function color-invert($color) {
+  @return find-color-invert($color);
+}
+
+@function color-complement($color) {
+  @return complement($color);
+}
+
+@function make-color-map($color, $invert, $complement) {
+  @if not $color or not $invert or not $complement {
+    @error 'Not all args supplied.';
+  }
+  @return ($color, $invert, $complement);
+}
