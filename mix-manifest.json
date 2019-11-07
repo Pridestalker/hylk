@@ -1,4 +1,7 @@
 {
     "/dist/scripts/main.js": "/dist/scripts/main.js",
-    "/dist/styles/main.css": "/dist/styles/main.css"
+    "/dist/styles/main.css": "/dist/styles/main.css",
+    "/dist/scripts/common/menu.js": "/dist/scripts/common/menu.js",
+    "/dist/scripts/routes/common.js": "/dist/scripts/routes/common.js",
+    "/dist/scripts/routes/home.js": "/dist/scripts/routes/home.js"
 }

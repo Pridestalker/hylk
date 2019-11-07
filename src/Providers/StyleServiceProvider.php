@@ -1,8 +1,6 @@
 <?php
 namespace App\Providers;
 
-use DusanKasan\Knapsack\Collection;
-
 /**
  * This class uses hooks and actions to (de|en)queue styles.
  *

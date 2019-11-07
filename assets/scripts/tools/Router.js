@@ -24,10 +24,15 @@ class Router {
             }
         }));
 
-        const fire = route !== '' && this.routes[route] && typeof this.routes[route][event] === 'function';
-        if (fire) {
-            this.routes[route][event](arg);
-        }
+        Promise
+            .resolve(this.routes[route])
+            .then(res => {
+                const fire = route !== '' && res && typeof res[event] === 'function';
+
+                if (fire) {
+                    res[event](arg);
+                }
+            })
     }
 
     loadEvents() {

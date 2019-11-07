@@ -3,8 +3,8 @@ namespace App;
 
 use App\Providers\AppServiceProvider;
 
-add_actions('hylk/init/pre');
+\do_action('hylk/init/pre');
 
 new AppServiceProvider();
 
-add_actions('hylk/init/post');
+\do_action('hylk/init/post');
