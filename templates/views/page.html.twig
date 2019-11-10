@@ -1,5 +1,12 @@
 {% extends 'layouts/app.twig' %}
 
 {% block content %}
-    {{ post.content }}
+    <main class="container mx-auto">
+        <div class="content px-4 lg:px-0" id="content">
+            <h1 class="page-title">
+                {{ post.title }}
+            </h1>
+            {{ post.content }}
+        </div>
+    </main>
 {% endblock %}

@@ -1,0 +1,10 @@
+@use "variables" as v;
+
+.wp-block-code {
+  width: auto;
+  overflow-x: scroll;
+
+  @screen md {
+    overflow-x: unset;
+  }
+}

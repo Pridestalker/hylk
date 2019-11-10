@@ -1,0 +1,4 @@
+@use "abstracts/variables/colors" as c;
+
+$footer-background: c.$primary;
+$footer-color: c.$primary-invert;

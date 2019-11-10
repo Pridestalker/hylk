@@ -1,0 +1,91 @@
+  @use "variables" as v;
+
+.header {
+  background: v.$header--background;
+  padding: 1rem .5rem;
+  //box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16),
+  //            0 13px 16px rgba(51, 51, 51, 0.08);
+}
+
+.site-title {
+  font-size: 2rem;
+  color: v.$header--color;
+}
+
+.main-menu {
+  &.active {
+    .hamburger {
+      right: 60vw;
+    }
+
+    .menu-wrapper {
+      transform: scale(1);
+      transition: all 225ms ease-in-out;
+    }
+  }
+}
+
+
+.hamburger {
+  position: fixed;
+  right: 0;
+  bottom: 2rem;
+  padding: 1rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  color: v.$navbar--color;
+  background: v.$navbar--background;
+  box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16),
+              0 13px 16px rgba(51, 51, 51, 0.08);
+  transition: all 225ms ease-in-out;
+
+  @screen lg {
+    display: none;
+  }
+}
+
+.menu-wrapper {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: v.$navbar--background;
+  box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16),
+              0 13px 16px rgba(51, 51, 51, 0.08);
+  width: 60vw;
+  z-index: 10;
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: all 225ms ease-in-out;
+
+  .admin-bar & {
+    top: 46px;
+  }
+
+  @screen lg {
+    position: unset;
+    transform: unset;
+    background: unset;
+    color: v.$navbar--background;
+    box-shadow: unset;
+    width: unset;
+    display: flex;
+  }
+}
+
+@screen lg {
+  .header-end {
+    margin: auto 0 auto auto;
+  }
+}
+
+.menu-item-wrapper {
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+    @screen lg {
+      margin-right: 1rem;
+      margin-bottom: unset;
+    }
+  }
+}

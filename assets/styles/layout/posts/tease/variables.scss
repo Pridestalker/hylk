@@ -1,0 +1,7 @@
+@use "abstracts/variables/colors" as c;
+
+$post-ex--rm--color: c.$primary;
+$post-ex--rm--border-color: c.$primary;
+
+$post-ex--rmb--color: c.$secondary-invert;
+$post-ex--rmb--background-color: c.$secondary;

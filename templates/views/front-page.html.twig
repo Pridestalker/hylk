@@ -1,0 +1,33 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+    <main class="container mx-auto">
+        <section class="content px-4 lg:px-0" id="content">
+            <h1 class="page-title">
+                {{ post.title }}
+            </h1>
+            {{ post.content }}
+        </section>
+
+        {% if posts|length > 0 %}
+        <section>
+            <div class="content px-4 lg:px-0" id="posts">
+                <h2>
+                    {{ __('Posts', 'hylk') }}
+                </h2>
+            </div>
+            <div class="posts">
+                {% for _post in posts %}
+                    {{ include('partials/tease/post.html.twig', { post: _post }) }}
+                {% endfor %}
+            </div>
+
+            <div class="flex">
+                <a href="{{ fn('get_post_type_archive_link', 'post') }}" class="read-more-button">
+                    {{ __('Read more', 'hylk') }}
+                </a>
+            </div>
+        </section>
+        {% endif %}
+    </main>
+{% endblock %}

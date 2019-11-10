@@ -19,6 +19,7 @@ return array(
     'App\\Helpers\\WP' => $baseDir . '/src/helpers/WP.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/src/Providers/AppServiceProvider.php',
     'App\\Providers\\MenuServiceProvider' => $baseDir . '/src/Providers/MenuServiceProvider.php',
+    'App\\Providers\\StyleServiceProvider' => $baseDir . '/src/Providers/StyleServiceProvider.php',
     'Asm89\\Twig\\CacheExtension\\CacheProviderInterface' => $vendorDir . '/asm89/twig-cache-extension/lib/Asm89/Twig/CacheExtension/CacheProviderInterface.php',
     'Asm89\\Twig\\CacheExtension\\CacheProvider\\DoctrineCacheAdapter' => $vendorDir . '/asm89/twig-cache-extension/lib/Asm89/Twig/CacheExtension/CacheProvider/DoctrineCacheAdapter.php',
     'Asm89\\Twig\\CacheExtension\\CacheProvider\\PsrCacheAdapter' => $vendorDir . '/asm89/twig-cache-extension/lib/Asm89/Twig/CacheExtension/CacheProvider/PsrCacheAdapter.php',

@@ -1,0 +1,19 @@
+{% if post %}
+<article class="post-tease" id="post-tease-{{ post.ID }}">
+    <figure class="post-tease-figure">
+        <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.alt }}" class="post-tease-img">
+    </figure>
+
+    <h3 class="title">
+        {{ post.title }}
+    </h3>
+
+    <section class="content excerpt">
+        {{ post.excerpt|length > 0? post.excerpt : post.content|excerpt(25) }}
+    </section>
+
+    <a class="read-more" href="{{ post.link }}">
+        {{ __('Read', 'hylk') }}
+    </a>
+</article>
+{% endif %}

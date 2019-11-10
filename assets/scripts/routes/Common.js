@@ -15,7 +15,7 @@ const setupMenuOnMobileAndTablet = async () => {
         const i = async () =>
             (await import(/* webpackChunkName: "dist/scripts/common/menu" */'./Common/Menu')).default;
         const Menu = await new i();
-        new Menu('.nav-menu', '.js-button-open-menu')
+        new Menu('.main-menu', '.js-hamburger')
             .init();
     }
 }
